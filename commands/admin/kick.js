@@ -28,7 +28,6 @@ class KickCommand extends commando.Command
        let words = args.split(' ');
        let reason = words.slice(1).join(' ');
        message.guild.member(kickedUser).kick(reason);
-       message.reply(kickedUser "was kicked for" reason)
         .then(console.log)
         .catch(console.error);
     }
