@@ -3,7 +3,6 @@ const prefix = ";";
 const bot = new Commando.Client({
     commandPrefix: prefix
 });
-const token = 'NTQ3NTY1MTgzMTcwNjQxOTIx.D04n_w.rO8DkfTKLRzlMn4wOHFL9w0Sdn4'
 
 // Commands
 
@@ -41,4 +40,4 @@ bot.on('message', function(message){
 });
 
 
-bot.login(token);
+bot.login(process.env.BOT_TOKEN);
